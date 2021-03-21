@@ -111,10 +111,10 @@ function randomimage(){
 			put_black = true;
 		}
 		if (put_black){
-			document.getElementById(rand).src = "black.jpg";
+			document.getElementById(rand).src = "img/black.jpg";
 			put_black = false;
 		}else{
-			document.getElementById(rand).src = folder + num + ".jpg"};
+			document.getElementById(rand).src = "img/" + folder + num + ".jpg"};
 	}
 }
 
@@ -139,7 +139,7 @@ function getValues(){
 function displayID(clicked){
 	var change = clicked.src.replace(/^f.*[\\\/]/, '').split(".")[0];
 	clicked.src = document.getElementById("imageType").src;
-	document.getElementById("imageType").src = change + ".jpg";
+	document.getElementById("imageType").src = "img/" + change + ".jpg";
 	images = [];
 	clearInterval(countingInterval); // para iniciar mi contador de nuevo
 	clearInterval(carouselInterval); // para iniciar mi slider
@@ -151,11 +151,11 @@ function displayID(clicked){
 
 // Funciones para mover mis imágenes.
 function isEmpty1(){
-	if (document.getElementById("pos2").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos2").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos2").src = images[0];
 		document.getElementById("pos1").src = images[1];
 		images.swap(0, 1);
-	} else if (document.getElementById("pos4").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos4").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos4").src = images[0];
 		document.getElementById("pos1").src = images[3];
 		images.swap(0, 3);
@@ -164,15 +164,15 @@ function isEmpty1(){
 };
 
 function isEmpty2(){
-	if (document.getElementById("pos1").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos1").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos1").src = images[1];
 		document.getElementById("pos2").src = images[0];
 		images.swap(0, 1);
-	} else if (document.getElementById("pos3").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos3").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos3").src = images[1];
 		document.getElementById("pos2").src = images[2];
 		images.swap(1, 2);
-	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos5").src = images[1];
 		document.getElementById("pos2").src = images[4];
 		images.swap(1, 4);
@@ -181,11 +181,11 @@ function isEmpty2(){
 };
 
 function isEmpty3(){
-	if (document.getElementById("pos2").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos2").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos2").src = images[2];
 		document.getElementById("pos3").src = images[1];
 		images.swap(1, 2);
-	} else if (document.getElementById("pos6").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos6").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos6").src = images[2];
 		document.getElementById("pos3").src = images[5];
 		images.swap(2, 5);
@@ -194,15 +194,15 @@ function isEmpty3(){
 };
 
 function isEmpty4(){
-	if (document.getElementById("pos1").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos1").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos1").src = images[3];
 		document.getElementById("pos4").src = images[0];
 		images.swap(0, 3);
-	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos5").src = images[3];
 		document.getElementById("pos4").src = images[4];
 		images.swap(3, 4);
-	} else if (document.getElementById("pos7").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos7").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos7").src = images[3];
 		document.getElementById("pos4").src = images[6];
 		images.swap(3, 6);
@@ -211,19 +211,19 @@ function isEmpty4(){
 };
 
 function isEmpty5(){
-	if (document.getElementById("pos2").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos2").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos2").src = images[4];
 		document.getElementById("pos5").src = images[1];
 		images.swap(1, 4);
-	} else if (document.getElementById("pos4").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos4").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos4").src = images[4];
 		document.getElementById("pos5").src = images[3];
 		images.swap(3, 4);
-	} else if (document.getElementById("pos6").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos6").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos6").src = images[4];
 		document.getElementById("pos5").src = images[5];
 		images.swap(4, 5);
-	} else if (document.getElementById("pos8").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos8").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos8").src = images[4];
 		document.getElementById("pos5").src = images[7];
 		images.swap(4, 7);
@@ -232,15 +232,15 @@ function isEmpty5(){
 };
 
 function isEmpty6(){
-	if (document.getElementById("pos3").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos3").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos3").src = images[5];
 		document.getElementById("pos6").src = images[2];
 		images.swap(2, 5);
-	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos5").src = images[5];
 		document.getElementById("pos6").src = images[4];
 		images.swap(4, 5);
-	} else if (document.getElementById("pos9").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos9").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos9").src = images[5];
 		document.getElementById("pos6").src = images[8];
 		images.swap(5, 8);
@@ -249,11 +249,11 @@ function isEmpty6(){
 };
 
 function isEmpty7(){
-	if (document.getElementById("pos4").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos4").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos4").src = images[6];
 		document.getElementById("pos7").src = images[3];
 		images.swap(3, 6);
-	} else if (document.getElementById("pos8").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos8").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos8").src = images[6];
 		document.getElementById("pos7").src = images[7];
 		images.swap(6, 7);
@@ -262,15 +262,15 @@ function isEmpty7(){
 };
 
 function isEmpty8(){
-	if (document.getElementById("pos7").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos7").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos7").src = images[7];
 		document.getElementById("pos8").src = images[6];
 		images.swap(6, 7);
-	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos5").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos5").src = images[7];
 		document.getElementById("pos8").src = images[4];
 		images.swap(4, 7);
-	} else if (document.getElementById("pos9").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos9").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos9").src = images[7];
 		document.getElementById("pos8").src = images[8];
 		images.swap(7, 8);
@@ -279,11 +279,11 @@ function isEmpty8(){
 };
 
 function isEmpty9(){
-	if (document.getElementById("pos8").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	if (document.getElementById("pos8").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos8").src = images[8];
 		document.getElementById("pos9").src = images[7];
 		images.swap(7, 8);
-	} else if (document.getElementById("pos6").src.replace(/^.*[\\\/]/, '') == "black.jpg"){
+	} else if (document.getElementById("pos6").src.replace(/^.*[\\\/]/, '') == "img/black.jpg"){
 		document.getElementById("pos6").src = images[8];
 		document.getElementById("pos9").src = images[5];
 		images.swap(5, 8);
@@ -295,7 +295,7 @@ function checkWin(){
 	if(you_win()){
 		highscore = String(hours) + ":" + String(minutes) + ":" + String(seconds);
 		var win = document.createElement("img");
-  	win.src = "winner.gif";
+  	win.src = "img/winner.gif";
 		win.id = "winner";
 		win.width = window.innerWidth;
 		win.height = window.innerHeight;
