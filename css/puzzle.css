@@ -1,0 +1,124 @@
+/*
+    CSS3 Stylesheet for the puzzle Game.
+    Made by Felipe Sandoval for CSAAI.
+*/
+
+@font-face{
+    font-family: depalma;
+    src: url("depalma.ttf");
+}
+
+@font-face{
+    font-family: puzzle;
+    src: url("puzzle.ttf");
+}
+
+@font-face{
+    font-family: clock;
+    src: url("alarm_clock.ttf");
+}
+
+body{
+	background-image: url(background.png);
+}
+
+p#title{
+	font-family: puzzle;
+	font-size: 60px;
+	color: white;
+	cursor: default;
+}
+
+p#special{
+	font-family: depalma;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	top: 115px;
+	left: 355px;
+	cursor: default;
+}
+
+p#timer{
+	font-family: clock;
+	position: absolute;
+	top: 565px;
+	left: 50px;
+	font-size: 20px;
+	color: white;
+	border: 4px solid skyblue;
+	cursor: default;
+}
+
+.button{
+	background-color: skyblue;
+	border: none;
+	border-radius: 80%;
+	color: firebrick;
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-family: depalma;
+	position: absolute;
+	top: 320px;
+	left: 50px;
+}
+
+.button:hover {
+  background-color: firebrick;
+  color: skyblue;
+}
+
+p#winner{
+	font-family: clock;
+	position: absolute;
+	top: 565px;
+	left: 50px;
+	font-size: 20px;
+	color: white;
+	border: 4px solid skyblue;
+}
+
+div.mainslider{
+	position: absolute;
+	top: 30px;
+	left: 600px;
+}
+
+img.slide{
+	cursor: pointer;
+}
+
+img#winner{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: auto;
+	cursor: pointer;
+}
+
+img#imageType{
+	position:absolute;
+	width: 300px;
+	height: 200px;
+	top: 370px;
+	left: 50px;
+	border: 6px solid skyblue;
+}
+
+img.table{
+	cursor: pointer;
+}
+
+table{
+	position: absolute;
+	right: 60px;
+	background-color: black;
+	border-collapse: collapse;
+	border: 6px solid black;
+}

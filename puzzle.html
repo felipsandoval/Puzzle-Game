@@ -1,0 +1,61 @@
+<!-- 
+    HTML code of Puzzle Game.
+    Made by Felipe Sandoval for CSAAI.
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="puzzle.css">
+    <script src="puzzle.js"></script>
+		<title> Práctica Puzzle x Felipe Sandoval</title>
+
+	</head>
+
+	<body onload="getValues()">
+		
+
+		<div class="mainslider">
+			<img onclick="displayID(this)" class="slide1" id="kylie" src="kylie.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide2" id="pug" src="pug.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide3" id="burger" src="burger.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide1" id="music" src="music.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide2" id="california" src="california.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide3" id="southpark" src="south.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide1" id="basquiat" src="basquiat.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide2" id="mykonos" src="mykonos.jpg" width="200px" height="140px">
+			<img onclick="displayID(this)" class="slide3" id="trippy" src="trippy.jpg" width="200px" height="140px">
+			
+		</div>
+
+		<p id="title"> Puzzle Game <p>
+		<p id="special"> by felipe sandoval </p>
+		<p id="timer"> YOUR TIME <span id="counter">0:0:0</span></p>
+		<button class="button" onclick="showhighscore()"> SHOW HIGHSCORE </button>
+		<center>
+			<img id="imageType" src="lambo.jpg" width="500px" height="300px">
+			<table>
+   			<tr>
+					<td onclick="isEmpty1()"><img class="table" src="lambo1.jpg" id="pos1"></td>
+					<td onclick="isEmpty2()"><img class="table" src="lambo2.jpg" id="pos2"></td>
+					<td onclick="isEmpty3()"><img class="table" src="lambo3.jpg" id="pos3"></td>
+   			</tr>
+   			<tr>
+					<td onclick="isEmpty4()"><img class="table" src="lambo4.jpg" id="pos4"></td>
+					<td onclick="isEmpty5()"><img class="table" src="lambo5.jpg" id="pos5"></td>
+					<td onclick="isEmpty6()"><img class="table" src="lambo6.jpg" id="pos6"></td>
+   			</tr>
+				<tr>
+					<td onclick="isEmpty7()"><img class="table" src="lambo7.jpg" id="pos7"></td>
+					<td onclick="isEmpty8()"><img class="table" src="lambo8.jpg" id="pos8"></td>
+					<td onclick="isEmpty9()"><img class="table" src="black.jpg" id="pos9"></td>
+				</tr>
+			</table>
+		</center>
+		<div id="slider"></div>
+	</body>
+
+</html>
